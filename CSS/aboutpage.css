@@ -1,0 +1,125 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background: #1e1e1e;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.about-container {
+    display: flex;
+    background: #222;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+    max-width: 1400px;
+    height: 500px;
+    gap: 30px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-in-out;
+}
+
+.about-container:hover {
+    transform: scale(1.03);
+}
+
+.about-image img {
+    width: 250px;
+    height: 300px;
+    border-radius: 50%;
+    transition: transform 0.4s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0px 0px 15px  #74600e;; 
+}
+
+.about-image img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 30px #74600e; 
+}
+
+.about-content h2 {
+    color: #a3ff00;
+    font-size: 28px;
+}
+
+.about-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+
+.about-info {
+    background: #333;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: inset 0px 0px 10px rgba(255, 255, 255, 0.2);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.info-item {
+    margin: 10px 0;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.info-item a {
+    color: #ffcc00;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.info-item a:hover {
+    color: #ffffff;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .about-image img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .about-content h2 {
+        font-size: 24px;
+    }
+
+    .about-content p {
+        font-size: 14px;
+    }
+
+    .info-item {
+        font-size: 14px;
+    }
+}

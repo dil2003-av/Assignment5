@@ -1,11 +1,215 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="This is my protfolio website.">
+  <meta name="keywords" content="dilmi, protfolio">
+  <link rel="stylesheet" href="/CSS/index.css">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
+  <title>MY PORTFOLIO</title>
+  <style> 
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      
+    }
+  </style>
 </head>
 <body>
-    
+
+  <h1 style="text-align: center;">MY PORTFOLIO</h1>
+ 
+  <nav>
+    <div class="nav-container">
+      <a href="#" class="logo">Dilmi Kaushalya</a>
+      <button class="menu-btn" onclick="toggleMenu()">☰</button> <!-- Burger Button -->
+      <ul class="nav-links">
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  <main>
+    <section id="home">
+        <link rel="stylesheet" href="/CSS/homepage.css">
+        <header>
+          <div class="home-container">
+              <div class="content">
+                  <p>Hello Everybody!!!</p>
+                  <h1>I'm <span class="highlight">DILMI KAUSHALYA</span></h1>
+                  <h2>And I'm a <span class="student">Student</span></h2>
+                  <p class="description">
+                      With curiosity and creativity, I embrace challenges as opportunities to grow, learn, and build something meaningful.
+                  </p>
+                  <div class="social-icons">
+                      <a href="#"><img src="/images/wp.png" alt="WhatsApp"></a>
+                      <a href="#"><img src="/images/lk.png" alt="LinkedIn"></a>
+                      <a href="#"><img src="/images/fb.png" alt="Facebook"></a>
+                      <a href="#"><img src="/images/git.png" alt="GitHub"></a>
+                      <a href="#"><img src="/images/insta.png" alt="Instagram"></a>
+                  </div>
+                  <a href="#" class="btn">Download CV</a>
+              </div>
+              <div class="profile-pic">
+                  <img src="/images/WhatsApp Image 2025-01-11 at 08.34.45.jpeg" alt="Profile Picture">
+              </div>
+          </div>
+      </header>
+    </section>
+
+    <section id="about">
+      <link rel="stylesheet" href="/CSS/aboutpage.css">
+      <div class="about-container">
+        <div class="about-image">
+            <img src="/images/WhatsApp Image 2025-01-11 at 08.34.45.jpeg" alt="Profile Picture">
+        </div>
+        <div class="about-content">
+            <h2>ABOUT ME</h2>
+            <p>I am a Software Engineering student at the Institute of Software Engineering (IJSE) with a passion for software development and Machine Learning. Proficient in Java, MySQL, and HTML.</p>
+            <div class="about-info">
+                <div class="info-item">
+                    <span>📅</span> 19th June 2003
+                </div>
+                <div class="info-item">
+                    <span>📞</span> +94 777 381 720
+                </div>
+                <div class="info-item">
+                    <span>📧</span> <a href="mailto:kaushalyadimi.av2003@gmail.com">kaushalyadimi.av2003@gmail.com</a>
+                </div>
+                <div class="info-item">
+                    <span>📍</span> Circular Road, Makuluwa, Galle
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section id="skills">
+      <link rel="stylesheet" href="/CSS/skills.css">
+      <div class="skills-container">
+          <div class="skills-content">
+              <h2>MY SKILLS</h2>
+              <div class="skills-list">
+                  <div class="skills-category">
+                      <h3>Programming Skills</h3>
+                      <ul>
+                          <li>✔ Java (Core & Advanced)</li>
+                          <li>✔ Object-Oriented Programming (OOP)</li>
+                          <li>✔ JavaFX for UI Development</li>
+                          <li>✔ MySQL Database Management</li>
+                          <li>✔ JDBC for Database Connectivity</li>
+                      </ul>
+                  </div>
+                  <div class="skills-category">
+                      <h3>Development Tools</h3>
+                      <ul>
+                          <li>✔ Scene Builder for JavaFX</li>
+                          <li>✔ IntelliJ IDEA, Eclipse</li>
+                      </ul>
+                      <div class="skill-images">
+                        <img src="/images/java2.png" alt="Java" width="50px" height="50px">
+                        <img src="/images/mysql2.png" alt="MySQL" width="50px" height="50px">
+                    </div>
+                  </div>
+                  <div class="skills-category">
+                      <h3>Technical Skills</h3>
+                      <ul>
+                          <li>✔ Software Development</li>
+                          <li>✔ Debugging & Testing</li>
+                          <li>✔ Database Design</li>
+                          <li>✔ Web Development Basics</li>
+                      </ul>
+                  </div>
+                  <div class="skills-category">
+                      <h3>Soft Skills</h3>
+                      <ul>
+                          <li>✔ Team Collaboration</li>
+                          <li>✔ Time Management</li>
+                          <li>✔ Communication Skills</li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <section id="projects">
+    <link rel="stylesheet" href="/CSS/projects.css">
+    <div class="projects-container">
+        <div class="projects-content">
+            <h2>MY PROJECTS</h2>
+            <div class="projects-list">
+                <div class="project-card">
+                    <h3>TIC TAC TOE GAME</h3>
+                    <img src="/images/tictactoegame.jpg" alt="Tic Tac Toe" width="50px" height="50px">
+                    <p>I created a Tic-Tac-Toe game using Java, applying object-oriented programming concepts like classes, methods, and encapsulation. The UI was designed with JavaFX and Scene Builder, ensuring a clean and interactive experience.</p>
+                </div>
+                <div class="project-card">
+                    <h3>SUN HOUSE RESTAURANT MANAGEMENT SYSTEM</h3>
+                    <img src="/images/LoginPage.png" alt="Restaurant System" width="50px" height="50px">
+                    <p>I developed a restaurant management system using Java, integrating MySQL for database management and JDBC for connectivity. This system streamlines restaurant operations like orders, reservations, and inventory.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+  <link rel="stylesheet" href="/CSS/contact.css">
+  <div class="contact-container">
+      <div class="contact-content">
+          <h2>CONTACT <span>With Me</span></h2>
+          <p>Have a question or want to work together? Let's connect!</p>
+          <form action="#" method="POST">
+              <div class="input-group">
+                  <input type="text" placeholder="First Name" required>
+                  <input type="text" placeholder="Last Name" required>
+              </div>
+              <div class="input-group">
+                  <input type="text" placeholder="Mobile number" required>
+                  <input type="email" placeholder="E mail" required>
+              </div>
+              <textarea placeholder="Your Message" required></textarea>
+              <button type="submit" class="send-btn">SEND <span>✈️</span></button>
+          </form>
+      </div>
+  </div>
+</section>
+
+  </main>
+
+  <footer> 
+    <p>&copy; Dilmi Kaushalya All Rights Reserved</p>
+  </footer>
+
+  
+  <script>
+ function toggleMenu() {
+    var menu = document.querySelector(".nav-links");
+    var btn = document.querySelector(".menu-btn");
+
+    menu.classList.toggle("show");
+    btn.classList.toggle("active");
+
+    if (menu.classList.contains("show")) {
+        btn.innerHTML = "✖";
+    } else {
+        btn.innerHTML = "☰";
+    }
+}
+  </script>
+  
+  </script>
 </body>
 </html>
